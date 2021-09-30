@@ -1,0 +1,26 @@
+express express-locallibrary-tutorial --view=pug
+
+cd express-locallibrary-tutorial
+npm install
+npm audit fix --force
+npm audit fix --force
+
+SET DEBUG=express-locallibrary-tutorial:* & npm start
+
+npm install --save-dev nodemon
+npm install -g nodemon (Sel)
+
+package.json add--->
+"scripts": {
+    "start": "node ./bin/www",
+     "devstart": "nodemon ./bin/www",
+     "serverstart": "DEBUG=express-locallibrary-tutorial:* npm run devstart" (無效)
+  },
+
+
+------> RUN
+SET DEBUG=express-locallibrary-tutorial:* 
+nodemon --ext '*'
+npm run devstart
+
+
