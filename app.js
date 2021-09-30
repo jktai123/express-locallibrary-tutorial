@@ -16,7 +16,7 @@ app.use('/wki', wiki);
 
 // Set up mongoose connection
 var mongoose = require('mongoose');
-var dev_db_url ='mongodb+srv://jktai123:j224568K@cluster0.ibia6.mongodb.net/local_library?retryWrites=true&w=majority'// 'mongodb+srv://cooluser:coolpassword@cluster0.a9azn.mongodb.net/local_library?retryWrites=true';
+var dev_db_url ='mongodb://127.0.0.1/my_database'; //'mongodb+srv://jktai123:j224568K@cluster0.ibia6.mongodb.net/local_library?retryWrites=true&w=majority'// 'mongodb+srv://cooluser:coolpassword@cluster0.a9azn.mongodb.net/local_library?retryWrites=true';
 var mongoDB = process.env.MONGODB_URI || dev_db_url;
 var mongoDB1 = 'mongodb://127.0.0.1/my_database';
 mongoose.connect(mongoDB, {useNewUrlParser: true, useUnifiedTopology: true});
