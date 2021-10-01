@@ -103,4 +103,6 @@ dist
 # TernJS port file
 .tern-port
 
-RUN.BAT
+*.bat
+TestMongDb-Cloud.js
+TestMongDb.js
